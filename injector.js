@@ -1,5 +1,5 @@
 function injectScript(name) {
-  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/style.css').then(a => a.text()).then(res => {
+  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/script.js').then(a => a.text()).then(res => {
       console.log(res);
       let s = document.createElement('script');
       s.type = 'application/javascript';
@@ -9,7 +9,7 @@ function injectScript(name) {
 }
 
 function injectCSS(name) {
-  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/script.js').then(a => a.text()).then(res => {
+  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/style.css').then(a => a.text()).then(res => {
       console.log(res);
       let s = document.createElement('style');
       s.type = 'text/css';
