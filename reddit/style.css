@@ -1,0 +1,13 @@
+.DualPartInterstitial,
+.DualPartInterstitialFooter,
+[class*="XPromo"],
+.TopButton,
+.SnooIcon,
+.PostFooter .Share,
+.Post .Share,
+[class*="XPromo"],
+[class*="modal"],
+[class*="Modal"],
+[href*="reddit.app.link"] {
+	display: none !important;
+}
