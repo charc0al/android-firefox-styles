@@ -1,31 +1,24 @@
-function injectScript(name) {
-  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/script.js').then(a => a.text()).then(res => {
-      console.log(res);
-      let s = document.createElement('script');
-      s.type = 'application/javascript';
+var injectorBaseURL = 'https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/';
+
+function inject(url, tag, t) {
+  fetch(url).then(a => a.text()).then(res => {
+      let s = document.createElement(tag);
+      s.type = t;
       s.innerHTML = res;
       document.head.appendChild(s);
   });
+}
+
+function injectScript(name) {
+  inject(injectorBaseURL + name + '/script.js', 'script', 'application/javascript');
 }
 
 function injectCSS(name) {
-  fetch('https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/' + name + '/style.css').then(a => a.text()).then(res => {
-      console.log(res);
-      let s = document.createElement('style');
-      s.type = 'text/css';
-      s.innerHTML = res;
-      document.head.appendChild(s);
-  });
+  inject(injectorBaseURL + name + '/style.css', 'style', 'text/css');
 }
 
-function each(arr, func) {
-  var i;
-  for (i = 0; i < arr.length; i++) {
-    func(arr[i]);
-  }
-}
+var host = window.location.host.split('.');
+var hostName = host[host.length-2];
 
-each(['reddit'], name => {
-  injectScript(name);
-  injectCSS(name);
-});
+injectScript(hostName);
+injectCSS(hostName);
