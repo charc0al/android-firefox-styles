@@ -1,4 +1,13 @@
+var hosts = ['reddit', 'twitter'];
+
 var injectorBaseURL = 'https://raw.githubusercontent.com/charc0al/android-firefox-styles/master/';
+
+function each(arr, func) {
+  var i;
+  for (i = 0; i < arr.length; i++) {
+    func(arr[i]);
+  }
+}
 
 function inject(url, tag, t) {
   fetch(url).then(a => a.text()).then(res => {
@@ -20,5 +29,7 @@ function injectCSS(name) {
 var host = window.location.host.split('.');
 var hostName = host[host.length-2];
 
-injectScript(hostName);
-injectCSS(hostName);
+if (hosts.indexOf(hostName) >= 0) {
+  injectScript(hostName);
+  injectCSS(hostName);
+}

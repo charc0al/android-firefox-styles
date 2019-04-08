@@ -7,7 +7,6 @@
 .Post .Share,
 [class*="XPromo"],
 [class*="modal"],
-[class*="Modal"],
 [href*="reddit.app.link"] {
 	display: none !important;
 }
