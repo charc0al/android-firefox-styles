@@ -29,7 +29,7 @@ function injectCSS(name) {
 var host = window.location.host.split('.');
 var hostName = host[host.length-2];
 
-if (hosts.indexOf(hostName) >= 0) {
+// if (hosts.indexOf(hostName) >= 0) {
   injectScript(hostName);
   injectCSS(hostName);
-}
+// }
