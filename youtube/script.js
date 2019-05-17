@@ -1,0 +1,10 @@
+var video = document.getElementsByClassName('html5-main-video')[0];
+var vc = document.getElementsByClassName('html5-video-player')[0];
+var ratio = video.offsetHeight / video.offsetWidth;
+var cols = document.getElementById('columns');
+var pc = document.getElementById('player-container');
+var ptc = document.getElementById('player-theater-container');
+cols.setAttribute('style', 'margin-top: ' + video.offsetHeight + 'px !important');
+ptc.style.height = video.offsetHeight + 'px';
+pc.style.height = video.offsetHeight + 'px';
+vc.style.height = video.offsetHeight + 'px';

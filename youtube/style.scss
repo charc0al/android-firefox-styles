@@ -1,0 +1,111 @@
+.ytp-chrome-bottom,
+.ytp-chrome-controls {
+	height: 10vw !important;
+}
+
+.ytp-swatch-background-color {
+	background-color: #0f0 !important;
+}
+
+.ytp-progress-list {
+	height: 1rem !important;
+}
+
+.ytp-scrubber-button {
+	width: 3rem !important;
+	height: 3rem !important;
+	border-radius: 3rem !important;
+}
+
+.ytp-scrubber-container {
+	top: -1rem !important;
+}
+
+.ytp-svg-fill,
+.ytp-right-controls button path {
+	fill: #0fa !important;
+}
+
+.ytp-progress-bar-container {
+	bottom: 9vw !important;
+}
+
+.ytp-chrome-controls .ytp-button {
+	width: 10vw !important;
+	height:100% !important;
+	color: #0ff !important;
+}
+
+.ytp-time-display {
+	position: fixed;
+	top: 45px;
+	left: 2%;
+	font-size: 250% !important;
+	padding: 17px 5px !important;
+}
+
+#player-theater-container .ytp-size-button.ytp-button {
+	display: none !important;
+}
+
+#player-theater-container {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	z-index: 9000;
+}
+
+#player-theater-container .video-stream.html5-main-video {
+	/*position: fixed !important*/;
+    height: auto !important;
+    width: 100vw !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9000;
+}
+
+#columns {
+	margin-top: 10vw !important;
+}
+
+#masthead-container {
+	bottom: 0 !important;
+	top: unset !important;
+}
+
+#page-manager {
+	margin-top: 0 !important;
+}
+
+#columns,
+#items,
+.dropdown-content {
+	background: #111 !important;
+}
+
+.style-scope {
+	color: #ccc !important;
+}
+
+#search {
+	height: 45px !important;
+}
+
+.yt-next-continuation {
+	background: #222 !important;
+}
+
+#video-title,
+#movie-title {
+	font-size: 20px !important;
+}
+
+ytd-movie-offer-module-renderer {
+	display: none !important;
+}
+
+.annotation,
+.video-annotations,
+.video-legacy-annotations {
+	display: none !important;
+}
